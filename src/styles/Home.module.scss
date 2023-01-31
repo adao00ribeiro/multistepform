@@ -1,0 +1,21 @@
+.main {
+  width: 55vw;
+  height: 75vh;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.containerLeft {
+  width: 40%;
+  height: 100%;
+}
+
+.containerRight {
+  padding-top: 2rem;
+  width: 60%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
