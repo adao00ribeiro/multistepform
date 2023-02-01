@@ -1,0 +1,115 @@
+.container {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h1 {
+        color: var(--Marine-blue);
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 14px;
+    }
+
+    span {
+        color: var(--Cool-gray);
+        font-weight: 50001;
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+
+
+
+.groupPlan {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.groupBox {
+    width: 100%;
+    height: 110px;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    img {
+        width: 40%;
+    }
+}
+
+.groupText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    span {}
+
+    p {
+        margin: 0;
+    }
+}
+
+.btn {
+    padding: 10px;
+    background-color: var(--Marine-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    div {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: var(--White);
+    }
+}
+
+.groupSelectionMY {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--Light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+
+.containerButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+
+    input {
+        cursor: pointer;
+        padding: 14px;
+        font-weight: 700;
+        color: var(--Marine-blue);
+        border: none;
+        background-color: transparent;
+    }
+
+    button {
+        cursor: pointer;
+        font-weight: 700;
+        padding: 14px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: none;
+        color: var(--White);
+        border-radius: 7px;
+        background-color: var(--Marine-blue);
+    }
+}

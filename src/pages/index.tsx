@@ -4,10 +4,34 @@ import { Inter } from '@next/font/google'
 import styles from './../styles/Home.module.scss'
 import { SideBar } from './components/sidebar'
 import { PersonalInfo } from './components/personalInfo'
+import { useContext } from 'react'
+import { MyContext } from '../context/mycontext'
+import { SelectPlan } from './components/selectPlan'
+import { Addons } from './components/addons'
+import { Summary } from './components/summary'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { step }: any = useContext(MyContext);
+
+
+  const SelectStep = () => {
+    switch (step) {
+      case 1:
+        return <PersonalInfo></PersonalInfo>
+        break;
+      case 2:
+        return <SelectPlan></SelectPlan>
+        break;
+      case 3:
+        return <Addons></Addons>
+        break;
+      case 4:
+        return <Summary></Summary>
+        break;
+    }
+  }
   return (
     <>
       <Head>
@@ -21,7 +45,7 @@ export default function Home() {
           <SideBar />
         </div>
         <div className={styles.containerRight}>
-          <PersonalInfo></PersonalInfo>
+          <SelectStep></SelectStep>
         </div>
       </main>
     </>
