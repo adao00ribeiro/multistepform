@@ -3,7 +3,7 @@ import { MyContext } from "../../../context/mycontext";
 import styles from "./styles.module.scss"
 
 export function PersonalInfo() {
-    const { step, setStep }: any = useContext(MyContext);
+    const { step, setStep, setPerson }: any = useContext(MyContext);
     const [inputs, setInputs] = useState(
         {
             inputName: "",
@@ -45,6 +45,14 @@ export function PersonalInfo() {
             }
         })
         if (!enableInputEmail && !enableInputEmail && !enableInputPhone) {
+            setPerson((prev) => {
+                return {
+                    ...prev,
+                    name: inputs.inputName,
+                    email: inputs.inputEmail,
+                    phoneNumber: inputs.inputPhoneNumber
+                }
+            });
             setStep(2);
         }
     }

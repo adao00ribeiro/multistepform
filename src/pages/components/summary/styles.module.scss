@@ -21,60 +21,97 @@
     }
 }
 
-.form {
 
-    margin-top: 14px;
-    height: 100%;
+
+.groupPlan {
+    margin-top: 1.5rem;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    gap: 1rem;
 }
 
-.group {
+.groupBox {
+    cursor: pointer;
+    width: 100%;
+    height: 110px;
+    border: 1px solid var(--Marine-blue);
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    justify-content: space-evenly;
 
-
-
-    input {
-        border: 1px solid var(--Light-gray);
-        border-radius: 5px;
-        font-weight: 700;
-        font-size: 1rem;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        color: var(--Marine-blue);
-    }
-
-    input:focus {
-        outline: 1px solid var(--Purplish-blue);
+    img {
+        width: 40%;
     }
 }
 
 .groupText {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-
-    label {
-        color: var(--Marine-blue);
-        font-size: 16px;
-        font-weight: 700;
-        margin-bottom: 7px;
-    }
+    flex-direction: column;
+    justify-content: flex-end;
 
     span {
-        color: red;
+        color: var(--Marine-blue);
+        font-weight: 700;
+    }
+
+    p {
+        color: var(--Cool-gray);
+        margin: 0;
     }
 }
 
+.btn {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--Marine-blue);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    div {
+
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: var(--White);
+    }
+}
+
+.groupSelectionMY {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--Magnolia);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+
 .containerButton {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: flex-end;
     height: 100%;
 
+    input {
+        cursor: pointer;
+        padding: 14px;
+        font-weight: 700;
+        color: var(--Marine-blue);
+        border: none;
+        background-color: transparent;
+    }
+
     button {
+        cursor: pointer;
         font-weight: 700;
         padding: 14px;
         padding-left: 1.5rem;
