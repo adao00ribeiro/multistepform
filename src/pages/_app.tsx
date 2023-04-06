@@ -6,7 +6,7 @@ import { TypePlan } from '../interfaces/IPlan';
 import './../styles/globals.css'
 
 export default function App({ Component, pageProps }) {
-  const [step, setStep] = useState(4);
+  const [step, setStep] = useState(1);
   const [person, setPerson] = useState<IPerson>({
     name: "",
     email: "",

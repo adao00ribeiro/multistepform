@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { MyContext } from "../../../context/mycontext";
 import styles from "./styles.module.scss"
 
-export function Summary() {
+export default function Summary() {
     const { step, setStep }: any = useContext(MyContext);
     const handleBack = () => {
         setStep(3);

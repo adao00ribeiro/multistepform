@@ -3,7 +3,7 @@ import { MyContext } from "../../../context/mycontext";
 import styles from "./styles.module.scss"
 
 
-export function SideBar() {
+export default function SideBar() {
     const { step, setStep }: any = useContext(MyContext);
     const st = {
         'backgroundColor': 'var(--Light-blue)',

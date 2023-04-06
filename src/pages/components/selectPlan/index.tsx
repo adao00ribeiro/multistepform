@@ -3,7 +3,7 @@ import { IMyContextProps, MyContext } from "../../../context/mycontext";
 import { TypePlan } from "../../../interfaces/IPlan";
 import styles from "./styles.module.scss"
 
-export function SelectPlan() {
+export default function SelectPlan() {
     const { step, setStep, person, setPerson }: IMyContextProps = useContext(MyContext);
     const plan = person.plan.typePlan === TypePlan.MONTHLY ? "mo" : "yr";
     const flexSEnd = {

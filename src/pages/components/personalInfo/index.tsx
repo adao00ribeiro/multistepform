@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { MyContext } from "../../../context/mycontext";
 import styles from "./styles.module.scss"
 
-export function PersonalInfo() {
+export default function PersonalInfo() {
     const { step, setStep, setPerson }: any = useContext(MyContext);
     const [inputs, setInputs] = useState(
         {

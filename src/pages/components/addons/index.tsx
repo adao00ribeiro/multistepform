@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { MyContext } from "../../../context/mycontext";
 import styles from "./styles.module.scss"
 
-export function Addons() {
+export default function Addons() {
     const { step, setStep }: any = useContext(MyContext);
     const handleBack = () => {
         setStep(2);
